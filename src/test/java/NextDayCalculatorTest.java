@@ -44,6 +44,12 @@ public class NextDayCalculatorTest {
         int[] actual = NextDayCalculator.nextDay(arr);
         assertArrayEquals(expect, actual);
     }
-
-
+    @Test
+    @DisplayName("Testing with value: 31-12-2020")
+    public  void nextDayWithDay31Month12() {
+        int[] arr = {31, 12, 2020};
+        int[] expect = {1, 1, 2021};
+        int[] actual = NextDayCalculator.nextDay(arr);
+        assertArrayEquals(expect, actual);
+    }
 }
