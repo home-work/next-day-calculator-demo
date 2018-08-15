@@ -28,6 +28,14 @@ public class NextDayCalculatorTest {
         int[] actual = NextDayCalculator.nextDay(arr);
         assertArrayEquals(expect, actual);
     }
+    @Test
+    @DisplayName("Testing with value: 28-2-2018")
+    public  void nextDayWithDay28Month2() {
+        int[] arr = {28, 2, 2018};
+        int[] expect = {1, 3, 2018};
+        int[] actual = NextDayCalculator.nextDay(arr);
+        assertArrayEquals(expect, actual);
+    }
 
 
 }
