@@ -11,6 +11,14 @@ public class NextDayCalculator {
             } else {
                 date[0] = date[0] + 1;
             }
+
+        } else if (date[1] == 2) {
+            if (date[0] == 29) {
+                date[0] = 1;
+                date[1] = date[1] + 1;
+            } else {
+                date[0] = date[0] + 1;
+            }
         } else {
             if (date[0] == 30) {
                 date[0] = 1;
